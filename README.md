@@ -13,11 +13,11 @@ Ensure the security of the web application with **JSON Web Token (JWT)** for use
 
 ## Validation 
 ### Data Validation
-Implement *Express-validator*, a robust library, for data validation. Ensure that the data received by the application meets the specified criteria, enhancing overall reliability and security.
+To do validation we use the *Express-validator*, a robust library, for data validation. Ensure that the data received by the application meets the specified criteria, enhancing overall reliability and security.
 
 ## Nodemailer
 ### Email Functionalities
-Integrate *Nodemailer*, a powerful library, for handling email functionalities. Utilize *Gmail's SMTP server* for sending emails.
+Use the *Nodemailer*, a powerful library, for handling email functionalities. Utilize *Gmail's SMTP server* for sending emails.
 
 ## Dotenv
 ### Sensitive Data Management
