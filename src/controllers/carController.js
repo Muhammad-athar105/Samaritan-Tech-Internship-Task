@@ -4,14 +4,6 @@ const errorHandler = require('../errors/errorHandler');
 
 const createCar = async (req, res) => {
   try {
-    const { make, model, year } = req.body;
-    // Check if the same car already exists
-    const existingCar = await carService.createCar({ make, model, year });
-
-    if (existingCar) {
-      return errorHandler.handleValidationError(res, 'Car already exists');
-    }
-
     const result = await carService.createCar(req.body);
     return result.error
       ? errorHandler.handleValidationError(res, result.error)
